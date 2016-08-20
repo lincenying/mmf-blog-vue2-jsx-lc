@@ -15,7 +15,14 @@ vue2-jsx leancloud-api: [https://github.com/lincenying/mmf-blog-vue2-jsx-lc](htt
 vue2-template 服务端渲染: [https://github.com/lincenying/mmf-blog-vue2-ssr](https://github.com/lincenying/mmf-blog-vue2-ssr) // 未完成
 
 ---
-
+1. 到 https://leancloud.cn 申请一个帐号
+2. 创建一个 应用
+3. 获取 App Key 和 Master Key
+4. 修改 ./src/api/index.js 下的下面两行
+```
+var APP_ID = 'M1SivUjmGWHTFDv6FpwYxTpl-gzGzoHsz'
+var APP_KEY = 'OwVDXgMCR09ztWdUIYGqG5Hl'
+```
 ```
 // 安装依赖
 npm install
