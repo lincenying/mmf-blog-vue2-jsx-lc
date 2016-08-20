@@ -1,4 +1,4 @@
-/* global window, editormd, testEditor */
+/* global window, editormd */
 import api from '../api'
 export default {
     data () {

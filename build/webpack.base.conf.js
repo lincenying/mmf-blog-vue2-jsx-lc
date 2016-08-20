@@ -12,7 +12,7 @@ module.exports = {
         app: './src/main.js',
         login: './src/login.js',
         vendor: [
-            'vue', 'vue-router', 'vuex', 'vuex-router-sync'
+            'vue', 'vue-router', 'vuex', 'vuex-router-sync', 'nprogress', 'store2', 'leancloud-storage', 'toastr', 'js-cookie'
         ]
     },
     output: {
@@ -45,12 +45,6 @@ module.exports = {
             test: /\.json$/,
             loader: 'json'
         }, {
-            test: /\.css$/,
-            loader: 'style!css!postcss'
-        },  {
-            test: /\.less/,
-            loader: 'style!css!less'
-        }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
             loader: 'url',
             query: {
@@ -67,10 +61,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
-            filename: 'vendor.bundle.js'
-        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',

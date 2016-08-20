@@ -18,8 +18,21 @@ module.exports = merge(baseWebpackConfig, {
     },
     // eval-source-map is faster for development
     devtool: '#eval-source-map',
+    module: {
+        loaders: [{
+            test: /\.css$/,
+            loader: 'style!css!postcss'
+        },  {
+            test: /\.less$/,
+            loader: 'style!css!less'
+        }]
+    },
     plugins: [
         // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor',
+            filename: 'vendor.bundle.js'
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         // https://github.com/ampedandwired/html-webpack-plugin
