@@ -15,7 +15,7 @@ export default {
         handleChange(type, e) {
             this.form[type] = e.target.value
         },
-        onSubmit(e) {
+        handleSubmit(e) {
             e.preventDefault()
             if (this.form.title === '') {
                 this.$store.dispatch('showMsg', '请输入标题')
@@ -86,7 +86,7 @@ export default {
                             <textarea id="editor" name="content" class="form-control hidden" data-autosave="editor-content"></textarea>
                         </section>
                         <section id="post-submit">
-                            <button on-click={this.onSubmit} class="btn btn-success">发布</button>
+                            <button on-click={this.handleSubmit} class="btn btn-success">发布</button>
                         </section>
                     </form>
                 </div>
