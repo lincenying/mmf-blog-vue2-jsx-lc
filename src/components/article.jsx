@@ -15,6 +15,7 @@ export default {
     },
     methods: {
         dateTime(val) {
+            if (!val) return ''
             var myDate = new Date(val)
             return myDate.getFullYear() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getDate() + " " + myDate.getHours() + ":" + myDate.getMinutes()
         }
