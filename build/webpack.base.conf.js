@@ -8,12 +8,8 @@ var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
     entry: {
-        polyfill: './src/polyfill',
         app: './src/main.js',
-        login: './src/login.js',
-        vendor: [
-            'vue', 'vue-router', 'vuex', 'vuex-router-sync', 'nprogress', 'store2', 'leancloud-storage', 'toastr', 'js-cookie'
-        ]
+        login: './src/login.js'
     },
     output: {
         path: config.build.assetsRoot,
@@ -65,6 +61,11 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
+        }),
+        new webpack.DllReferencePlugin({
+            name: 'vendor',
+            context: path.resolve(__dirname, "../src"),
+            manifest: require("../static/vendor-manifest.json")
         })
     ]
 }
