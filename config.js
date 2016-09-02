@@ -6,7 +6,7 @@ module.exports = {
         index: path.resolve(__dirname, 'dist/index.html'),
         assetsRoot: path.resolve(__dirname, 'dist'),
         assetsSubDirectory: 'static',
-        assetsPublicPath: './',
+        assetsPublicPath: '/mmf-blog-vue2-jsx-lc/',
         productionSourceMap: false
     },
     dev: {
