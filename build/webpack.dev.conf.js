@@ -29,10 +29,6 @@ module.exports = merge(baseWebpackConfig, {
     },
     plugins: [
         // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
-            filename: 'vendor.bundle.js'
-        }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         // https://github.com/ampedandwired/html-webpack-plugin
