@@ -1,68 +1,572 @@
 {
   "name": "vendor",
   "content": {
-    "../node_modules/jquery/dist/jquery.js": {
-      "id": 1,
+    "../node_modules/charenc/charenc.js": {
+      "id": 16,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "../node_modules/process/browser.js": {
-      "id": 2,
+    "../node_modules/component-emitter/index.js": {
+      "id": 32,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "../node_modules/store2/dist/store2.js": {
-      "id": 3,
+    "../node_modules/core-js/fn/array/find-index.js": {
+      "id": 33,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "../node_modules/toastr/toastr.js": {
-      "id": 4,
+    "../node_modules/core-js/fn/array/find.js": {
+      "id": 34,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "../node_modules/vue-router/dist/vue-router.js": {
-      "id": 5,
+    "../node_modules/core-js/fn/array/includes.js": {
+      "id": 35,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "../node_modules/vue/dist/vue.common.js": {
-      "id": 6,
+    "../node_modules/core-js/modules/_a-function.js": {
+      "id": 36,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "../node_modules/vuex-router-sync/index.js": {
-      "id": 7,
-      "meta": {},
-      "hasStarExport": false,
-      "activeExports": []
-    },
-    "../node_modules/vuex/dist/vuex.js": {
-      "id": 8,
-      "meta": {},
-      "hasStarExport": false,
-      "activeExports": []
-    },
-    "../node_modules/webpack/buildin/amd-define.js": {
-      "id": 9,
-      "meta": {},
-      "hasStarExport": false,
-      "activeExports": []
-    },
-    "../node_modules/webpack/buildin/global.js": {
+    "../node_modules/core-js/modules/_add-to-unscopables.js": {
       "id": 10,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
     },
-    "./vendors.js": {
+    "../node_modules/core-js/modules/_an-object.js": {
+      "id": 37,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_array-includes.js": {
+      "id": 38,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_array-methods.js": {
+      "id": 17,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_array-species-constructor.js": {
+      "id": 39,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_array-species-create.js": {
+      "id": 40,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_cof.js": {
+      "id": 18,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_core.js": {
+      "id": 4,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_ctx.js": {
+      "id": 19,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_defined.js": {
+      "id": 20,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_descriptors.js": {
+      "id": 11,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_dom-create.js": {
+      "id": 41,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_export.js": {
+      "id": 12,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_fails.js": {
+      "id": 21,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_global.js": {
+      "id": 5,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_has.js": {
+      "id": 42,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_hide.js": {
+      "id": 13,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_ie8-dom-define.js": {
+      "id": 43,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_iobject.js": {
+      "id": 22,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_is-array.js": {
+      "id": 44,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_is-object.js": {
+      "id": 6,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_object-dp.js": {
+      "id": 45,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_property-desc.js": {
+      "id": 46,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_redefine.js": {
+      "id": 47,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_shared.js": {
+      "id": 48,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_to-index.js": {
+      "id": 49,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_to-integer.js": {
+      "id": 23,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_to-iobject.js": {
+      "id": 50,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_to-length.js": {
+      "id": 24,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_to-object.js": {
+      "id": 51,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_to-primitive.js": {
+      "id": 52,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_uid.js": {
+      "id": 25,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/_wks.js": {
+      "id": 26,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/es6.array.find-index.js": {
+      "id": 53,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/es6.array.find.js": {
+      "id": 54,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/core-js/modules/es7.array.includes.js": {
+      "id": 55,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/crypt/crypt.js": {
+      "id": 56,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/debug/browser.js": {
+      "id": 14,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/debug/debug.js": {
+      "id": 57,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/is-buffer/index.js": {
+      "id": 58,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/jquery/dist/jquery.js": {
+      "id": 59,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/acl.js": {
+      "id": 60,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/av.js": {
+      "id": 15,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/browserify-wrapper/localstorage-browser.js": {
+      "id": 61,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/browserify-wrapper/parse-base64-browser.js": {
+      "id": 62,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/cache.js": {
+      "id": 27,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/cloudfunction.js": {
+      "id": 63,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/error.js": {
+      "id": 2,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/event.js": {
+      "id": 64,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/file.js": {
+      "id": 65,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/geopoint.js": {
+      "id": 66,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/index.js": {
+      "id": 67,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/insight.js": {
+      "id": 68,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/localstorage.js": {
+      "id": 28,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/object.js": {
+      "id": 69,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/op.js": {
+      "id": 70,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/promise.js": {
+      "id": 3,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/push.js": {
+      "id": 71,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/query.js": {
+      "id": 72,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/relation.js": {
+      "id": 73,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/request.js": {
+      "id": 1,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/role.js": {
+      "id": 74,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/search.js": {
+      "id": 75,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/status.js": {
+      "id": 76,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/uploader/cos.js": {
+      "id": 77,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/uploader/qiniu-browser.js": {
+      "id": 78,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/uploader/s3.js": {
+      "id": 79,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/user.js": {
+      "id": 80,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/utils.js": {
+      "id": 29,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/leancloud-storage/dist/node/version.js": {
+      "id": 81,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/localstorage-memory/lib/localstorage-memory.js": {
+      "id": 82,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/md5/md5.js": {
+      "id": 83,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/ms/index.js": {
+      "id": 84,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/process/browser.js": {
+      "id": 7,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/store2/dist/store2.js": {
+      "id": 85,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/superagent/lib/client.js": {
+      "id": 8,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/superagent/lib/is-object.js": {
+      "id": 30,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/superagent/lib/request-base.js": {
+      "id": 86,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/superagent/lib/request.js": {
+      "id": 87,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/toastr/toastr.js": {
+      "id": 88,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/underscore/underscore.js": {
       "id": 0,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/vue-router/dist/vue-router.js": {
+      "id": 89,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/vue/dist/vue.common.js": {
+      "id": 90,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/vuex-router-sync/index.js": {
+      "id": 91,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/vuex/dist/vuex.js": {
+      "id": 92,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/webpack/buildin/amd-define.js": {
+      "id": 93,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "../node_modules/webpack/buildin/global.js": {
+      "id": 9,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "./polyfill/index.js": {
+      "id": 94,
+      "meta": {},
+      "hasStarExport": false,
+      "activeExports": []
+    },
+    "./vendors.js": {
+      "id": 31,
       "meta": {},
       "hasStarExport": false,
       "activeExports": []
