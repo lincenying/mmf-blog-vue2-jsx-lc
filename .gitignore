@@ -1,7 +1,6 @@
 .DS_Store
 node_modules/
 dist/
-static/dll/
 npm-debug.log
 .vscode/
 proxy.js
