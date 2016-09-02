@@ -38,10 +38,6 @@ var webpackConfig = merge(baseWebpackConfig, {
             context: path.resolve(__dirname, "../src"),
             manifest: require("../static/vendor-manifest.json")
         }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: "commons",
-            chunks: ["app", "login"]
-        }),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
@@ -57,10 +53,9 @@ var webpackConfig = merge(baseWebpackConfig, {
         // you can customize output by editing /index.html
         // see https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
-            chunks: ['commons', 'app'],
+            chunks: ['app'],
             filename: process.env.NODE_ENV === 'testing' ? 'index.html' : config.build.index,
             template: 'index.html',
-            inject: true,
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,
@@ -68,10 +63,9 @@ var webpackConfig = merge(baseWebpackConfig, {
             }
         }),
         new HtmlWebpackPlugin({
-            chunks: ['commons', 'login'],
+            chunks: ['login'],
             filename: 'login.html',
             template: 'login.html',
-            inject: true,
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,
