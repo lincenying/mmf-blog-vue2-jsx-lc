@@ -1,6 +1,6 @@
 # mmf-blog vuejs 2.0 jsx语法 leancloud api版
 
-demo: [http://www.mmxiaowu.com](http://www.mmxiaowu.com)
+demo: [https://lincenying.github.io/mmf-blog-vue2-jsx-lc/](https://lincenying.github.io/mmf-blog-vue2-jsx-lc/)
 
 react: [https://github.com/lincenying/mmf-blog-react](https://github.com/lincenying/mmf-blog-react)
 
