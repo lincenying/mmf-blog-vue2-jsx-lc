@@ -21,8 +21,11 @@ export default {
     },
     methods: {
         handleAddUser() {
-            api.addUser().then(msg => {
-                console.log(msg)
+            api.addUser().then(() => {
+                this.$store.dispatch('showMsg', {
+                    content: '用户名: admin1, 密码: 123456',
+                    type: 'success'
+                })
             }, error => {
                 this.$store.dispatch('showMsg', error.toString())
             })
