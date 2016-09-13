@@ -27,9 +27,6 @@ var APP_KEY = 'OwVDXgMCR09ztWdUIYGqG5Hl'
 // 安装依赖
 npm install
 
-// 利用DllPlugin打包依赖库 (当src/vendors.js里的依赖库没有更新, 则不需要重复执行该命令)
-npm run dll
-
 // 生产环境
 npm run build
 

@@ -29,14 +29,14 @@ var webpackConfig = merge(baseWebpackConfig, {
         }]
     },
     plugins: [
+        // http://vuejs.github.io/vue-loader/workflow/production.html
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'
             }
         }),
-        new webpack.DllReferencePlugin({
-            context: path.resolve(__dirname, "../src"),
-            manifest: require("../static/vendor-manifest.json")
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ["common", "vendor"]
         }),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
@@ -53,23 +53,25 @@ var webpackConfig = merge(baseWebpackConfig, {
         // you can customize output by editing /index.html
         // see https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
-            chunks: ['app'],
+            chunks: ['vendor', 'common', 'app'],
             filename: process.env.NODE_ENV === 'testing' ? 'index.html' : config.build.index,
             template: 'index.html',
+            inject: true,
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,
-                removeAttributeQuotes: true
+                removeRedundantAttributes: true
             }
         }),
         new HtmlWebpackPlugin({
-            chunks: ['login'],
+            chunks: ['vendor', 'common', 'login'],
             filename: 'login.html',
             template: 'login.html',
+            inject: true,
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,
-                removeAttributeQuotes: true
+                removeRedundantAttributes: true
             }
         })
     ]
