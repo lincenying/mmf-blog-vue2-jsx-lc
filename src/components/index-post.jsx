@@ -22,11 +22,11 @@ export default {
     render(h) { // eslint-disable-line
         const moreOrLess = this.ispc ?
             <div class="more-less">
-            {
-            !this.showMore ?
-                <a on-click={this.handleOpen} class="more" href="javascript:;">展开 ↓</a> :
-                <a on-click={this.handleOpen} class="less" href="javascript:;">收起 ↑</a>
-            }
+                {
+                !this.showMore ?
+                    <a on-click={this.handleOpen} class="more" href="javascript:;">展开 ↓</a> :
+                    <a on-click={this.handleOpen} class="less" href="javascript:;">收起 ↑</a>
+                }
             </div> : ''
         return (
             <div class="index m-post box article">
@@ -38,11 +38,11 @@ export default {
                 <div class="cont cont-1">
                     <div class="text">
                         <h2><router-link to={'/article/' + this.item._id}>{this.item.title}</router-link></h2>
-                        {this.ispc ? <div class={!this.showMore ? 'markdown-body showless' : 'markdown-body'} domProps-innerHTML={this.item.content}></div> : ''}
+                        {this.ispc ? <div class={!this.showMore ? 'markdown-body showless' : 'markdown-body'} domProps-innerHTML={this.item.content} /> : ''}
                         {moreOrLess}
                     </div>
                 </div>
-                <div class="info info-1"></div>
+                <div class="info info-1" />
             </div>
         )
     }

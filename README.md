@@ -24,6 +24,9 @@ var APP_ID = 'M1SivUjmGWHTFDv6FpwYxTpl-gzGzoHsz'
 var APP_KEY = 'OwVDXgMCR09ztWdUIYGqG5Hl'
 ```
 ```
+// 安装cooking
+npm install cooking-cli -g
+
 // 安装依赖
 npm install
 

@@ -1,3 +1,6 @@
 {
-    "extends": "lcy-react"
+    "extends": "lcy-react",
+    "rules": {
+        "react/jsx-handler-names": 0
+    }
 }
