@@ -15,7 +15,7 @@ const app = new Vue({
     ...App
 })
 
-router.beforeEach((route, redirect, next) => {
+router.beforeEach((to, from, next) => {
     const scrollTop = document.body.scrollTop
     const path = store.state.route.path
     if (path) {
