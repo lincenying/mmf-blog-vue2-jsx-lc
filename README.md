@@ -28,7 +28,7 @@ var APP_KEY = 'OwVDXgMCR09ztWdUIYGqG5Hl'
 npm install cooking-cli -g
 
 // 安装依赖
-npm install
+npm install  or  yarn
 
 // 生产环境
 npm run build
