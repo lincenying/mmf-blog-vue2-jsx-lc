@@ -65,6 +65,7 @@ export const getComment = ({ commit, state: {route: { path, params: { id }}} }, 
 export const postComment = ({ commit, state: {route: { path, params: { id }}} }, config) => {
     return api.postComment(config).then(data => {
         commit(types.POST_COMMENT, data)
+        return data
     })
 }
 
