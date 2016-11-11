@@ -3,11 +3,11 @@ import VueRouter from 'vue-router'
 import ls from 'store2'
 import cookies from 'js-cookie'
 
-import index from '../components/index'
-import adminEdit from '../components/edit'
-import adminList from '../components/list'
-import adminPost from '../components/post'
-import article from '../components/article'
+import index from '../pages/index'
+import adminEdit from '../pages/admin-edit'
+import adminList from '../pages/admin-list'
+import adminPost from '../pages/admin-post'
+import article from '../pages/article'
 
 Vue.use(VueRouter)
 
@@ -41,9 +41,9 @@ const router = new VueRouter({
         { name:'index', path: '/category/:id(\\d+)', component: index },
         { name:'index', path: '/search/:qs', component: index },
         { name:'article', path: '/article/:id', component: article, meta: { scrollToTop: true } },
-        { path: '/list/:page(\\d+)', component: adminList, meta: { scrollToTop: true }, beforeEnter: guardRoute },
-        { path: '/post', component: adminPost, meta: { scrollToTop: true }, beforeEnter: guardRoute },
-        { path: '/edit/:id/:page', component: adminEdit, meta: { scrollToTop: true }, beforeEnter: guardRoute }
+        { path: '/admin/list/:page(\\d+)', component: adminList, meta: { scrollToTop: true }, beforeEnter: guardRoute },
+        { path: '/admin/post', component: adminPost, meta: { scrollToTop: true }, beforeEnter: guardRoute },
+        { path: '/admin/edit/:id/:page', component: adminEdit, meta: { scrollToTop: true }, beforeEnter: guardRoute }
     ]
 })
 

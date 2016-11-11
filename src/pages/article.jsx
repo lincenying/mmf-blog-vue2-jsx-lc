@@ -1,5 +1,5 @@
 import { mapGetters } from 'vuex'
-import comment from './comment'
+import comment from '../components/comment'
 const fetchInitialData = async store => {
     await store.dispatch(`getArticle`)
     await store.dispatch(`getComment`, { page: 1, limit: 5})
@@ -52,16 +52,8 @@ export default {
                 <div class="box m-page box-do">
                     <div class="w-icon w-icon-2" />
                     <div class="w-icon w-icon-3" />
-                    {
-                    this.article.prev.prev_id ?
-                        <router-link to={'/article/' + this.article.prev.prev_id} id="__prev_permalink__" class="prev">上一篇</router-link> :
-                        <span class="prev">上一篇</span>
-                    }
-                    {
-                    this.article.next.next_id ?
-                        <router-link to={'/article/' + this.article.next.next_id} id="__next_permalink__" class="next">下一篇</router-link>:
-                        <span class="next">下一篇</span>
-                    }
+                    { this.article.prev.prev_id ? <router-link to={'/article/' + this.article.prev.prev_id} id="__prev_permalink__" class="prev">上一篇</router-link> : <span class="prev">上一篇</span> }
+                    { this.article.next.next_id ? <router-link to={'/article/' + this.article.next.next_id} id="__next_permalink__" class="next">下一篇</router-link>: <span class="next">下一篇</span> }
                 </div>
                 <comment />
             </div>
